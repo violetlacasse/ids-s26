@@ -27,7 +27,7 @@ different perspectives brought by successive student cohorts.
 We will adopt a cooperative approach, facilitated through the use of GitHub,
 a platform that encourages collaborative coding and content development. 
 To view these contributions and the lecture notes in their entirety, 
-please visit our GitHub repository at <https://github.com/ohyoo/ids-s26>.
+please visit our GitHub repository at <https://github.com/statds/ids-s26>.
 
 Students will be asked to contribute to the notes by submitting pull requests
 to our GitHub repository. This method not only enriched the
