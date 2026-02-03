@@ -140,8 +140,11 @@ Markdown.
     - Work start to finish on a full fledged data science project 
     - Improve my knowledge of Python, Git, Quarto and working in repositories
 + Desai, Alysha
-    - Gain more hands-on experience cleaning, organizing, and breaking apart real-world datasets to better understand how raw data is transformed into usable insights.
-    - Improve my skills in preparing presentations of my findings and become more confident explaining more complex topics to an audience.
+    - Gain more hands-on experience cleaning, organizing, and breaking apart 
+    real-world datasets to better understand how raw data is transformed into 
+    usable insights.
+    - Improve my skills in preparing presentations of my findings and become 
+    more confident explaining more complex topics to an audience.
     - Become more familiar with version control tools like Git and GitHub
 + Faisal, Zaynab
     - Gain a better understanding of data science and real life applications
@@ -155,7 +158,8 @@ Markdown.
 + Lacasse, Violet
     - Learn how to find/grab/handle datasets.
     - Become familiar with Git and how it can be used to collaborate.
-    - Learn more about data science and how it can help in my data analysis (domain: earth data science) major.
+    - Learn more about data science and how it can help in my data analysis 
+    (domain: earth data science) major.
 + Landolphi, Joseph
 + Lawrence, Claire
 + Liu, Kevin
