@@ -59,12 +59,19 @@ decimal.Decimal(1).exp().to_eng_string()[2:]
 ## Important Libraries
 
 + NumPy
+    - Fast arrays and math
 + pandas
+    - Data wrangling with labeled tables 
 + matplotlib
+    - Core plotting library
 + IPython/Jupyter
+    - Interactive computing environment 
 + SciPy
+    - Scientific algorithms built on NumPy 
 + scikit-learn
+    - Machine learning toolkit 
 + statsmodels
+    - Classical statistics/econometrics 
 
 Question: how to draw a random sample from a normal distribution and
 evaluate the density and distributions at these points?
