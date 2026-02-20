@@ -141,6 +141,7 @@ The grading will be based on whether you can successfully make pull requests to 
 
 
 
+
 ### Part 2. Generalized “Fibonacci-like” recurrence
 
 Define a sequence $\{a_n\}$ by
@@ -321,7 +322,7 @@ def sim_group(n, group):
     if group == "A":
         b0, b1, b2, sig = -0.2,  2.2, -1.4, 1.0
     else:
-        b0, b1, b2, sig = -0.2, -0.8,  0.6, 1.8
+        b0, b1, b2, sig = -0.2, -0.8,  0.6, 1.0
 
     lin = b0 + b1*x1 + b2*x2 + rng.normal(0, sig, n)
     p = 1 / (1 + np.exp(-lin))
@@ -393,7 +394,7 @@ pooled = make_pipeline(StandardScaler(), LogisticRegression(max_iter=5000))
 pooled.fit(Xtr, ytr)
 
 print("\n=== 1) Pooled (ignores group) ===")
-# print(eval_by_group(pooled, Xte, yte, gte).round(3))
+print(eval_by_group(pooled, Xte, yte, gte).round(3))
 ```
 
 
@@ -412,7 +413,7 @@ for g in ["A", "B"]:
     rows.append(res)
 
 sep_results = pd.concat(rows, ignore_index=True)
-# print(sep_results.round(3))
+print(sep_results.round(3))
 
 ```
 
@@ -433,12 +434,16 @@ def add_interactions(dfX_with_group):
 Xtr_int = add_interactions(train[["group"] + features])
 Xte_int = add_interactions(test[["group"] + features])
 
-partial = make_pipeline(StandardScaler(), LogisticRegression(max_iter=5000, C=0.3))
+partial = make_pipeline(StandardScaler(), LogisticRegression(max_iter=5000))
 partial.fit(Xtr_int, ytr)
 
 print("\n=== 3) One model with group interaction (regularized) ===")
 print(eval_by_group(partial, Xte_int, yte, gte).round(3))
 ```
+
++ Explain the data generating process and how the two groups differ in terms of signal and noise. Why is it harder to learn for group B?
+
++ Explain the evaluation metrics (accuracy, AUC, FPR, FNR) and what they mean in this binary classification context.
 
 + Explain how the pooled model works and how it performs for each group. Why does it perform worse for B?
 
